@@ -1,0 +1,24 @@
+{
+  "name": "scoreboard_script",
+  "version": "1.0.0",
+  "description": "记分牌算法模拟",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piggona/scoreBoard_script.git"
+  },
+  "keywords": [
+    "scoreBoard"
+  ],
+  "author": "haohao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piggona/scoreBoard_script/issues"
+  },
+  "homepage": "https://github.com/piggona/scoreBoard_script#readme"
+}
