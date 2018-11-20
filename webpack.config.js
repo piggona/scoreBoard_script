@@ -19,7 +19,8 @@ var getHtmlConfig = function(name){
 };
 var config = {
     entry: {
-        'common'       : ['./src/pages/common/index.js'],
+        'common'       : ['./src/pages/operate/index.js'],
+        'scoreboard'   : ['./src/pages/scoreboard/index.js']
     },
     output: {
         path      : path.resolve(__dirname,'./dist'),
@@ -70,11 +71,7 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
 
         // html模板的处理
-        new HtmlWebpackPlugin(getHtmlConfig('detail')),
-        new HtmlWebpackPlugin(getHtmlConfig('search')),
-        new HtmlWebpackPlugin(getHtmlConfig('multi-search')),
-        new HtmlWebpackPlugin(getHtmlConfig('person')),
-        new HtmlWebpackPlugin(getHtmlConfig('assignee'))
+        new HtmlWebpackPlugin(getHtmlConfig('scoreboard')),
     ],
     resolve: {
         alias : {
