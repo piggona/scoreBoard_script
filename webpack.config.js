@@ -18,6 +18,7 @@ var getHtmlConfig = function(name){
     }
 };
 var config = {
+    devtool: '#source-map',
     entry: {
         'common'       : ['./src/pages/operate/index.js'],
         'scoreboard'   : ['./src/pages/scoreboard/index.js']

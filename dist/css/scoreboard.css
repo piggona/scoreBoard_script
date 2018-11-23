@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+body{
+    font-size: 1rem;
+    background: #f6f6f6;
+    font: tahoma, Arial, Microsoft YaHei, sans-serif;
+    display: inline;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/* 定宽布局 */
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+/*用途：将超出边界的东西不显示，并消除浮动即排列重叠的元素*/
+    overflow: hidden;
+}
+
+/* 全局通用样式 */
+/* 隐藏类 */
+.hide{
+    display: none;
+}
+/* 超链样式 */
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: #66BB6A;
+}
+.link-text{
+    color: #999;
+    text-decoration:none;
+}
+/* 按钮 */
+.btn{
+    display: inline-block;
+    padding: 0 30px;
+    margin-left: 2rem;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: 1px solid #9E9E9E;
+    background: #F5F5F5;
+    font-size: 17px;
+    font-weight: bold;
+    color: #455A64;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+    background: #F5F5F5;
+}
+.page-wrap {
+    width: 680px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.page-wrap-multi {
+    margin-top: 40px;
+    margin-bottom: 150px;
+    
+}
+.with-nav-side {
+    width: 480px;
+}
+.search-side {
+    
+    margin: 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+.search-con {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right:1rem;
+}
+input {
+    width: 800px;
+    height: 40px;
+}
+.status-canvas{
+    border: 1px solid #9E9E9E;
+}
+
+/*# sourceMappingURL=scoreboard.css.map*/

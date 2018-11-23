@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="//cdn.bootcss.com/select2/4.0.3/js/select2.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+    <title>scoreboard</title>
+</head>
+
+<body>
+    <div class="search-con">
+        <input class="instruction-input" id="instruction-input" placeholder="输入instruction" />
+        <button class="btn" id="add-btn">加入instruction</button>
+    </div>
+    <div class="instruction-list">
+        <table class="table" id="instruction-table">
+            <thead>
+                <tr>
+                    <th>instruction</th>
+                    <th>fi</th>
+                    <th>fj</th>
+                    <th>fk</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="instruction">
+
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button class="btn-mini" id="confirm">confirm</button>
+        <button class="btn-mini" id="start">start</button>
+        <button class="btn-mini" id="one-step">one step</button>
+        <button class="btn-mini" id="clear">clear</button>
+        <button class="btn-mini" id="add-integer">添加integer</button>
+        <button class="btn-mini" id="add-multi">添加multi</button>
+        <button class="btn-mini" id="add-add">添加add</button>
+        <button class="btn-mini" id="add-divide">添加divide</button>
+        <br>
+        <div class="status-canvas">
+            <table class="table col-md-4" id="instruction-status">
+                <thead>
+                    <tr>
+                        <th>issue</th>
+                        <th>Read</th>
+                        <th>execute complete</th>
+                        <th>write result</th>
+                    </tr>
+                </thead>
+                <tbody id="status">
+                </tbody>
+            </table>
+            <table class="table col-md-8" id="unit-status">
+                <thead>
+                    <tr>
+                        <th>Busy</th>
+                        <th>OP</th>
+                        <th>fi</th>
+                        <th>fj</th>
+                        <th>fk</th>
+                        <th>qj</th>
+                        <th>qk</th>
+                        <th>rj</th>
+                        <th>rk</th>
+                    </tr>
+                </thead>
+                <tbody id="unit">
+                </tbody>
+            </table>
+            <table class="table col-md-8" id="register-status">
+                    <thead>
+                        <tr>
+                            <th>f1</th>
+                            <th>f2</th>
+                            <th>f3</th>
+                            <th>f4</th>
+                            <th>f5</th>
+                            <th>f6</th>
+                            <th>f7</th>
+                            <th>f8</th>
+                            <th>f9</th>
+                            <th>f10</th>
+                        </tr>
+                    </thead>
+                    <tbody id="register">
+                    </tbody>
+                </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
