@@ -18,7 +18,7 @@ var scoreboard = {
         "add" : 2,
         "divide" : 40
     },
-    interval: 0,
+    interval: -1,
     instruction_status: [],
     functional_unit_status: { "integer": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 1 }], "multi": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 10 }], "add": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 2 }], "divide": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 40 }] },
     register_result_status: { "f0": [], "f1": [], "f2": [], "f3": [], "f4": [], "f5": [], "f6": [], "f7": [], "f8": [], "f9": [], "f10": [] },
@@ -295,7 +295,6 @@ var scoreboard = {
         this.interval = -1;
         this.all_instruction = this.instruction;
         this.instruction = [];
-        this.all_instruction = [];
         this.instruction_status = [];
         this.functional_unit_status = { "integer": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 1 }], "multi": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 10 }], "add": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 2 }], "divide": [{ "name": "", "busy": false, "op": "", "fi": "", "fj": "", "fk": "", "qj": "", "qk": "", "rj": "", "rk": "", "time": 40 }] };
         this.register_result_status = { "f0": [], "f1": [], "f2": [], "f3": [], "f4": [], "f5": [], "f6": [], "f7": [], "f8": [], "f9": [], "f10": [] };
